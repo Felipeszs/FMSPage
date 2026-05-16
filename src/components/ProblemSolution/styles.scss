@@ -1,0 +1,136 @@
+.problem-section {
+  padding: 96px 0;
+  border-top: 1px solid var(--line);
+  background: var(--surface-soft);
+
+  .eyebrow {
+    color: #e03e3e;
+  }
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.problem-card {
+  position: relative;
+  overflow: hidden;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: #fee2e2;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    color: var(--ink);
+    font-size: 1.12rem;
+  }
+
+  p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+}
+
+.problem-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  background: #fef2f2;
+  font-size: 1.15rem;
+}
+
+.solution-section {
+  padding: 96px 0;
+  background: var(--dark);
+
+  .section-header h2 {
+    color: #ffffff;
+  }
+
+  .section-header p {
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 56px;
+}
+
+.solution-step {
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.04);
+  transition:
+    background 0.2s,
+    border-color 0.2s;
+
+  &:hover {
+    border-color: rgba(52, 199, 130, 0.3);
+    background: rgba(255, 255, 255, 0.07);
+  }
+
+  span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--green);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    line-height: 1.65;
+  }
+}
+
+@media (max-width: 900px) {
+  .problem-section,
+  .solution-section {
+    padding: 64px 0;
+  }
+
+  .problem-grid,
+  .solution-grid {
+    grid-template-columns: 1fr;
+  }
+}

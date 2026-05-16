@@ -1,0 +1,29 @@
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px 48px;
+  background: var(--dark-2);
+  color: rgba(255, 255, 255, 0.42);
+
+  p {
+    margin: 0;
+    font-size: 0.84rem;
+  }
+}
+
+.footer-logo img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .site-footer {
+    flex-direction: column;
+    padding: 24px;
+    text-align: center;
+  }
+}
