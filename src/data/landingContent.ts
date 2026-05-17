@@ -73,6 +73,7 @@ export const portfolioExamples = [
     name: 'Clínica Sorriso Prime',
     description:
       'Modelo para apresentar tratamentos, localização, diferenciais e chamada para avaliação.',
+    url: 'https://sorriso-prime-kappa.vercel.app',
   },
   {
     category: 'Clínica estética',
@@ -91,7 +92,7 @@ export const portfolioExamples = [
 export const plans = [
   {
     name: 'Essencial',
-    price: 'R$ 413',
+    price: 'R$ 397',
     description: 'Para começar com uma presença clara, bonita e pronta para contato.',
     features: [
       'Landing page one-page',
@@ -104,7 +105,7 @@ export const plans = [
   },
   {
     name: 'Profissional',
-    price: 'R$ 597',
+    price: 'R$ 497',
     description: 'Para negócios que querem uma estrutura mais estratégica e completa.',
     highlighted: true,
     features: [
@@ -118,7 +119,7 @@ export const plans = [
   },
   {
     name: 'Premium',
-    price: 'R$ 897',
+    price: 'R$ 697',
     description: 'Para quem busca mais refinamento, acompanhamento inicial e evolução.',
     features: [
       'Tudo do Profissional',

@@ -31,7 +31,13 @@ export function Examples() {
                 <span>{example.category}</span>
                 <h3>{example.name}</h3>
                 <p>{example.description}</p>
-                <a href="#contato">Ver modelo demonstrativo →</a>
+                <a
+                  href={example.url ?? "#contato"}
+                  target={example.url ? "_blank" : undefined}
+                  rel={example.url ? "noreferrer" : undefined}
+                >
+                  Ver modelo demonstrativo →
+                </a>
               </div>
             </article>
           ))}

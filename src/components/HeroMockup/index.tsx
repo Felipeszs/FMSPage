@@ -1,5 +1,7 @@
 import './styles.scss'
 
+const sorrisoPrimeUrl = 'https://sorriso-prime-kappa.vercel.app'
+
 export function HeroMockup() {
   return (
     <div className="mockup-card" aria-label="Modelo demonstrativo de landing page odontológica">
@@ -38,7 +40,7 @@ export function HeroMockup() {
         </div>
       </div>
 
-      <a className="mockup-button" href="#contato">
+      <a className="mockup-button" href={sorrisoPrimeUrl} target="_blank" rel="noreferrer">
         Agendar avaliação
       </a>
     </div>
